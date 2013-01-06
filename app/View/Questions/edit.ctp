@@ -1,3 +1,14 @@
+
+<div class="actions nav nav-list"  style="padding-top: 80px">
+    <ul class="nav nav-list" >
+        <li class="active"><?php echo $this->Html->link("Home",array('controller'=>'users','action'=>'dashboard'));?></li>
+        <li><?php echo $this->Html->link("Add User",array('controller'=>'users','action'=>'add'));?></li>
+        <li><?php echo $this->Html->link("List User",array('controller'=>'users','action'=>'index'));?></li>
+        <li><?php echo $this->Html->link("List Questions",array('controller'=>'questions','action'=>'index'));?></li>
+
+
+    </ul>
+</div>
 <div class="questions form">
 <?php echo $this->Form->create('Question'); ?>
 	<fieldset>
@@ -10,15 +21,4 @@
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
 </div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
 
-		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Question.id')), null, __('Are you sure you want to delete # %s?', $this->Form->value('Question.id'))); ?></li>
-		<li><?php echo $this->Html->link(__('List Questions'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Feedback Forms'), array('controller' => 'feedback_forms', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Feedback Form'), array('controller' => 'feedback_forms', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Ratings'), array('controller' => 'ratings', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Rating'), array('controller' => 'ratings', 'action' => 'add')); ?> </li>
-	</ul>
-</div>

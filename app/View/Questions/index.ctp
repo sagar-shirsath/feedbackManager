@@ -1,10 +1,10 @@
 <div class="questions index" style="padding-top: 80px">
     <div class="nav nav-list">
         <ul>
-            <li><?php echo $this->Html->link("Home", array('controller' => 'users', 'action' => 'dashboard'));?></li>
-            <li class="active"><?php echo $this->Html->link("List Users", array('controller' => 'users', 'action' => 'index'));?></li>
-            <li><?php echo $this->Html->link("List Questions", array('controller' => 'question', 'action' => 'index'));?></li>
-            <li><?php echo $this->Html->link(__('New Question'), array('controller' => 'questions', 'action' => 'add')); ?> </li>
+           <li class="active"><?php echo $this->Html->link("Home",array('controller'=>'users','action'=>'dashboard'));?></li>
+            <li><?php echo $this->Html->link("Add User",array('controller'=>'users','action'=>'add'));?></li>
+            <li><?php echo $this->Html->link("List User",array('controller'=>'users','action'=>'index'));?></li>
+            <li><?php echo $this->Html->link("List Questions",array('controller'=>'questions','action'=>'index'));?></li>
         </ul>
     </div>
     <h2><?php echo __('Questions');
@@ -48,4 +48,4 @@
         ?>
     </div>
 </div>
->
+
